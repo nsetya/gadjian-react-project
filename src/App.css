@@ -1,38 +1,274 @@
 .App {
+  padding: 30px 60px 30px 60px;
+}
+
+.container {
+  display: flex;
+  flex: 'wrap';
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.imageAppLogo {
+  height: 55px;
+}
+
+.userLoginContainer {
+  display: flex;
+  flex: 'wrap';
+  flex-direction: row;
+  align-items: center;
+  margin-left: auto;
+}
+
+.helloText {
+  color: black;
+}
+
+.userLoginText {
+  color: #23c7c6;
+  margin-left: 2px;
+}
+
+.dot {
+  height: 35px;
+  width: 35px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid black;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.photoText {
+  font-size: x-small;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.menuBodyContainer {
+  width: 100%;
+  height: 726px;
+  display: grid;
+  grid-template-areas: 'menu main main main main main main main';
+  margin-top: 35px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.menu {
+  grid-area: menu;
+  background-color: white;
+  margin-top: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.menuContainer {
   display: flex;
-  flex-direction: column;
+  flex: 'wrap';
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  border: none;
+}
+
+.menuContainer:hover {
+  background-color: #f9f9f9;
+}
+
+.homeIcon {
+  height: 30px;
+  width: 30px;
+}
+
+.homeText {
+  margin-left: 20px;
+}
+
+.main {
+  grid-area: main;
+  background-color: #f9f9f9;
+  padding: 40px 40px 0 40px;
+}
+
+.headerBodyContainer {
+  display: grid;
+  grid-template-areas: 'text form';
+  background-color: white;
+  width: 100%;
+  height: 120px;
+}
+
+.personnelContainer {
+  grid-area: text;
+  padding: 20px 0 0 20px;
+}
+
+.personnelText {
+  font-size: x-large;
+  font-weight: bold;
+  color: #23c7c6;
+}
+
+.personnelListText {
+  font-size: large;
+  color: #646464;
+}
+
+.searchContainer {
+  grid-area: form;
+  display: flex;
+  flex-direction: row;
+  margin: 30px 15px 0 auto;
+}
+
+.searchPersonnel {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #646464;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchButton {
+  background-color: white;
+  border: none;
+}
+
+.searchIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.searchInput {
+  border: none;
+}
+
+.addPersonnel {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #23c7c6;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  background-color: #23c7c6;
+  margin-left: 10px;
+}
+
+.addInput {
+  background-color: #23c7c6;
+  color: white;
+  border: none;
+}
+
+.addInput::placeholder {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.addButton {
+  border: none;
+  background-color: #23c7c6;
+}
+
+.addIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.containerList {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.employeeListContainer {
+  margin-top: 50px;
+  width: 240px;
+  height: auto;
+  background-color: white;
+}
+
+.headerEmployeeList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: 4px solid #f9f9f9;
+}
+
+.employeeID {
+  font-size: medium;
+  margin-left: 7px;
+
+}
+
+.dotsButton {
+  border: none;
+  margin-left: auto;
+  margin-top: 8px;
+  background-color: white;
+}
+
+.dots {
+  width: 32px;
+  height: 32px;
+}
+
+.bodyEmployeeList {
+  height: 360px;
+  padding: 15px;
+}
+
+.photoEmployee {
+  height: 155px;
+  width: 155px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid black;
+  display: inline-block;
+  margin-left: 25px;
+}
+
+.photoTextEmployee {
+  font-size: large;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.employeeDataContainer {
+  margin-top: 15px;
+}
+
+.dataTitleText {
+  font-size: medium;
+  color: #646464;
+  font-weight: bold;
+}
+
+.dataText {
+  font-size: medium;
+  color: #646464;
+  margin-bottom: 5px;
+}
+
+.buttonContainer {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.buttonContainer button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttonContainer button[disabled], button:disabled{
+  opacity: 0.4;
+  pointer-events: none;
 }
